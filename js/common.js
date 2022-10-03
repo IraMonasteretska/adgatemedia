@@ -35,16 +35,20 @@ $(document).ready(function () {
         });
     }
 
+    if ($('.singleselect').length) {
+        $(".singleselect").select2({
+            minimumResultsForSearch: Infinity
+        });
+    }
+    if ($('.multiselect').length) {
+        $(".multiselect").select2({
+            placeholder: "Select",
+            // allowClear: true,
 
-    $(".singleselect").select2({
-        minimumResultsForSearch: Infinity
-    });
+        });
+    }
 
-    $(".multiselect").select2({
-        placeholder: "Select",
-        // allowClear: true,
 
-    });
 
 
     $('#household').change(function () {
@@ -166,19 +170,22 @@ $(document).ready(function () {
             }
             counter++
         }, interval);
-    
+
         function stopLoop() {
             clearInterval(loop)
         }
     });
 
 
-  
 
 
 
-
-
+    if ($('#phone').length) {
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            // any initialisation options go here
+        });
+    }
 
 
 
