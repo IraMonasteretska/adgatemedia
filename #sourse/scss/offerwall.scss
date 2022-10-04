@@ -1,12 +1,12 @@
 .herosect {
-    height: 205px;
-    overflow: hidden;
+    // height: 205px;
+    // overflow: hidden;
 
     position: relative;
     display: flex;
     align-items: center;
     padding-top: 53px;
-   
+
 
     &::after {
         content: '';
@@ -20,11 +20,11 @@
     }
 
     .container {
-        position: relative;
+        // position: relative;
         z-index: 2;
-        // position: absolute;
-        // left: 0;
-        // right: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
     }
 
     h1 {
@@ -51,15 +51,15 @@
 
 .herosect__img {
     width: 100%;
-    height: 100%;
+    // height: 100%;
     left: 0;
     top: 0;
-    position: absolute;
+    // position: absolute;
     object-fit: cover;
     object-position: 50% 50%;
 
-    // min-height: 205px;
-    // margin-top: -53px;
+    min-height: 205px;
+    margin-top: -53px;
 }
 
 .offerwallsect__btns {
@@ -440,6 +440,29 @@
         flex: 0 0 calc(100% - 149px);
     }
 
+    .offerwallsect__btns:not(.rsp) {
+
+        a {
+            text-align: center;
+            padding: 2px 5px;
+
+            img {
+                display: none;
+            }
+        }
+
+        .row {
+            margin-left: -3px;
+            margin-right: -3px;
+
+            .col-6 {
+                padding-left: 3px;
+                padding-right: 3px;
+                max-width: 25%;
+                flex: 0 0 25%;
+            }
+        }
+    }
 
 }
 
@@ -571,6 +594,12 @@
         background-image: none;
     }
 
+    .offerwallsect__btns {
+
+        a {
+            font-size: 13px;
+        }
+    }
 
 
 
