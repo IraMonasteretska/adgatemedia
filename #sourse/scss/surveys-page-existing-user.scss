@@ -1,0 +1,35 @@
+.completeyourprofile__box {
+    margin-bottom: 24px;
+}
+
+.bordertop {
+    border-top: 1px solid rgba(177, 196, 218, 0.45);
+}
+
+.completeyourprofile__box .price {
+    transition: 0.3s;
+    border: 1px solid #4CABE9;
+
+    &:hover {
+        color: #4CABE9;
+        background: #fff;
+    }
+}
+
+.completeyourprofile__box:hover {
+    .price {
+        color: #4CABE9;
+        background: #fff;
+    }
+}
+.completeyourprofile__box.disabled {
+    border: 1px solid rgba(218,226,236,0.59)
+}
+.completeyourprofile__box {
+    transition: 0.3s;
+    border: 1px solid #fff;
+
+    &:hover {
+        border: 1px solid #4CABE9;
+    }
+}
