@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apps Page Selected on Desktop</title>
+    <title>Offer Wall</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -84,7 +85,7 @@
 
         <main class="main">
             <div class="herosect">
-                <img class="herosect__img" src="img/heroimg.png" alt="offer image">
+                <img class="herosect__img" src="img/testimg.jpg" alt="offer image">
                 <div class="container">
                     <h1>Trion Game</h1>
                     <p class="subtitle">Magic forest</p>
@@ -123,64 +124,69 @@
                     </div>
                 </div>
 
-                <div class="whichdevices">
+                <div class="recomendedbox">
                     <div class="container">
-                        <div class="whichdevices__textsect">
-                            <p class="title">
-                                Which devices do you own?
+                        <div class="recomendedboxwrapper">
+                            <p class="recomendedbox__title">
+                                Recommended for you
+                                <img src="img/fire-icon.svg" alt="fire icon">
                             </p>
-                            <div class="descr">
-                                <p>
-                                    Nulla ac mi convallis nibh tristique fringilla. Fusce ultricies ultrices odio non
-                                    lobortis. Etiam ornare erat risus, fringilla consequat lectus varius sit amet. Etiam
-                                    sit
-                                    amet lacus euismod, tempus metus at, pellentesque purus. Aenean tempor tincidunt
-                                    diam,
-                                    ac lobortis nisi ultricies in.
-                                </p>
+                            <div class="swiper mySwiper recomendedbox__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="recomendedblock">
+                                                <div class="recomendedblock__img">
+                                                    <img src="img/img1.png" alt="img">
+                                                </div>
+                                                <div class="recomendedblock__infosect">
+                                                    <div class="recomendedblock__descr">
+                                                        <p class="title">
+                                                            YouHodler - Bitcoin Wallet
+                                                        </p>
+                                                        <p class="descr">
+                                                            Portafoglio cripto-fiat "one-stop-shop" per ottenere prestiti
+                                                            garantiti
+                                                        </p>
+                                                    </div>
+                                                    <div class="recomendedblock__price">
+                                                        <span>
+                                                            <img src="img/dollar.svg" alt="icon">
+                                                            143
+                                                        </span>
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="recomendedblock">
+                                                <div class="recomendedblock__img">
+                                                    <img src="img/img2.png" alt="img">
+                                                </div>
+                                                <div class="recomendedblock__infosect">
+                                                    <div class="recomendedblock__descr">
+                                                        <p class="title">
+                                                            iPhone 13 Pro
+                                                        </p>
+                                                        <p class="descr">
+                                                            Win a new iPhone 13 Pro!
+                                                        </p>
+                                                    </div>
+                                                    <div class="recomendedblock__price">
+                                                        <span>
+                                                            <img src="img/dollar.svg" alt="icon">
+                                                            100
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="whichdevices__formwrapper">
-                            <form action="#" class="choosedevice">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="inputwrapper">
-                                            <input type="checkbox" id="checkbox1" name="device">
-                                            <label for="checkbox1">
-                                                <div class="imgwrap">
-                                                    <img src="img/iphone-pic.png" alt="img">
-                                                </div>
-                                                <p>IPhone</p>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="inputwrapper">
-                                            <input type="checkbox" id="checkbox2" name="device">
-                                            <label for="checkbox2">
-                                                <div class="imgwrap">
-                                                    <img src="img/ipad-pic.png" alt="img">
-                                                </div>
-                                                <p>IPad</p>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="inputwrapper">
-                                            <input type="checkbox" id="checkbox3" name="device">
-                                            <label for="checkbox3">
-                                                <div class="imgwrap">
-                                                    <img src="img/android-pic.png" alt="img">
-                                                </div>
-                                                <p>Android</p>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="submitbtn">
-                                    <input class="choosedevice__submit" type="submit" value="Save">
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -188,8 +194,8 @@
                 <div class="offerwallsect__wrapper">
                     <div class="container">
                         <div class="offerwallsect__boxes">
-                            <a href="#" class="disabled">
-                                <div class="offerwall__box wd">
+                            <a href="#">
+                                <div class="offerwall__box">
                                     <div class="offerwall__box-img">
                                         <img src="img/img3.png" alt="img">
                                     </div>
@@ -198,12 +204,20 @@
                                             Brawl Stars Brawler Quiz!
                                             <img src="img/fire-icon.svg" alt="fire">
                                         </p>
-                                        <p class="date">
-                                            <span>Date Start:</span> 09/01/2023
+                                        <p class="descr">
+                                            Take the quiz to see if you can identify each of these Brawlers, and don't
+                                            forget to
+                                            share
+                                            the link with family and friends to see where you stack up!
                                         </p>
-                                        <p class="status"><span>Status:</span> Pending</p>
                                     </div>
                                     <div class="offerwall__box-rightinfo">
+                                        <span class="osbtn">
+                                            <img src="img/android.svg" alt="android os">
+                                        </span>
+                                        <span class="osbtn">
+                                            <img src="img/apple.svg" alt="ios">
+                                        </span>
                                         <span class="pricebtn">
                                             <img src="img/dollar.svg" alt="icon">
                                             135
@@ -212,7 +226,7 @@
                                 </div>
                             </a>
                             <a href="#">
-                                <div class="offerwall__box wd">
+                                <div class="offerwall__box">
                                     <div class="offerwall__box-img">
                                         <img src="img/img4.png" alt="img">
                                     </div>
@@ -220,12 +234,17 @@
                                         <p class="title">
                                             Opera GX
                                         </p>
-                                        <p class="date">
-                                            <span>Date Start:</span> 22/02/2023
+                                        <p class="descr">
+                                            Get an unparalleled gaming and browsing experience on mobile and desktop.
                                         </p>
-                                        <p class="status"><span>Status:</span> Pending</p>
                                     </div>
                                     <div class="offerwall__box-rightinfo">
+                                        <span class="osbtn">
+                                            <img src="img/android.svg" alt="android os">
+                                        </span>
+                                        <span class="osbtn">
+                                            <img src="img/apple.svg" alt="ios">
+                                        </span>
                                         <span class="pricebtn">
                                             <img src="img/dollar.svg" alt="icon">
                                             135
@@ -234,7 +253,7 @@
                                 </div>
                             </a>
                             <a href="#">
-                                <div class="offerwall__box wd">
+                                <div class="offerwall__box">
                                     <div class="offerwall__box-img">
                                         <img src="img/img5.png" alt="img">
                                     </div>
@@ -243,12 +262,17 @@
                                             Amazon Photos
                                             <img src="img/fire-icon.svg" alt="fire">
                                         </p>
-                                        <p class="date">
-                                            <span>Date Start:</span> 08/03/2023
+                                        <p class="descr">
+                                            Prime members get unlimited photo storage and 5GB for video
                                         </p>
-                                        <p class="status"><span>Status:</span> Pending</p>
                                     </div>
                                     <div class="offerwall__box-rightinfo">
+                                        <span class="osbtn">
+                                            <img src="img/android.svg" alt="android os">
+                                        </span>
+                                        <span class="osbtn">
+                                            <img src="img/apple.svg" alt="ios">
+                                        </span>
                                         <span class="pricebtn">
                                             <img src="img/dollar.svg" alt="icon">
                                             125
@@ -256,8 +280,8 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="disabled">
-                                <div class="offerwall__box wd ">
+                            <a href="#">
+                                <div class="offerwall__box">
                                     <div class="offerwall__box-img">
                                         <img src="img/img6.png" alt="img">
                                     </div>
@@ -265,12 +289,19 @@
                                         <p class="title">
                                             Ultimate Minecraft Mob Challenge
                                         </p>
-                                        <p class="date">
-                                            <span>Date Start:</span> 10/04/2023
+                                        <p class="descr">
+                                            Take the quiz to see if you can identify each of these Brawlers, and don't
+                                            forget to
+                                            share the link with family and friends to see where you stack up!
                                         </p>
-                                        <p class="status"><span>Status:</span> Pending</p>
                                     </div>
                                     <div class="offerwall__box-rightinfo">
+                                        <span class="osbtn">
+                                            <img src="img/android.svg" alt="android os">
+                                        </span>
+                                        <span class="osbtn">
+                                            <img src="img/apple.svg" alt="ios">
+                                        </span>
                                         <span class="pricebtn">
                                             <img src="img/dollar.svg" alt="icon">
                                             123
@@ -279,7 +310,7 @@
                                 </div>
                             </a>
                             <a href="#">
-                                <div class="offerwall__box wd">
+                                <div class="offerwall__box">
                                     <div class="offerwall__box-img">
                                         <img src="img/img7.png" alt="img">
                                     </div>
@@ -287,12 +318,19 @@
                                         <p class="title">
                                             Brawl Stars Brawler Quiz!
                                         </p>
-                                        <p class="date">
-                                            <span>Date Start:</span> 09/05/2023
+                                        <p class="descr">
+                                            Take the quiz to see if you can identify each of these Brawlers, and don't
+                                            forget to
+                                            share the link with family and friends to see where you stack up!
                                         </p>
-                                        <p class="status"><span>Status:</span> Pending</p>
                                     </div>
                                     <div class="offerwall__box-rightinfo">
+                                        <span class="osbtn">
+                                            <img src="img/android.svg" alt="android os">
+                                        </span>
+                                        <span class="osbtn">
+                                            <img src="img/apple.svg" alt="ios">
+                                        </span>
                                         <span class="pricebtn">
                                             <img src="img/dollar.svg" alt="icon">
                                             123
@@ -328,6 +366,7 @@
     </div>
 
     <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/common.js"></script>
 
 </body>
