@@ -378,12 +378,104 @@
                                         </p>
                                     </div>
                                 </div>
-                               
+                                <div class="completprofile__step step7 hide">
+                                    <div class="inpfields">
+                                        <p class="title">
+                                            Are you employed? What is your household income?
+                                        </p>
+                                       <div class="liverow">
+                                            <div class="liverowinpfield">
+                                                <select id="empstatus" class="selectstyle singleselect">
+                                                    <option value="0">Employment Status</option>
+                                                    <option value="1">Status 1</option>
+                                                    <option value="2">Status 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="liverowinpfield">
+                                                <select id="household" class="selectstyle singleselect">
+                                                    <option value="0">Household Income</option>
+                                                    <option value="1">Household Income 1</option>
+                                                    <option value="2">Household Income 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="liverowinpfield hideinput">
+                                                <select id="income" class="selectstyle singleselect">
+                                                    <option value="0">$75,000 - $99,999</option>
+                                                    <option value="1">$115,000 - $199,999</option>
+                                                    <option value="2">$275,000 - $299,999</option>
+                                                </select>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    <div class="btnsfield">
+                                        <a href="#" class="btnsfield__btn back">
+                                            <img src="img/previc.svg" alt="next">
+                                            Back
+                                        </a>
+                                        <a href="#" class="btnsfield__btn next">
+                                            Next
+                                            <img src="img/nextic.svg" alt="next">
+                                        </a>
+                                    </div>
+                                    <div class="disclamer">
+                                        <p>
+                                            <b>Disclaimer </b>:if you answer this profiler dishonestly you will likely have
+                                            trouble getting getting surveys to credit.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="completprofile__step step8 hide">
+                                    <div class="inpfields">
+                                        <p class="title">
+                                            Illnes/conditions applicable to you
+                                        </p>
+                                       <div class="liverow">
+                                            <div class="liverowinpfield">
+                                                <select id="illnes" multiple="multiple" class="selectstyle multiselect">
+                                                    <option value="0">Employment Status</option>
+                                                    <option value="1">Status 1</option>
+                                                    <option value="2">Status 2</option>
+                                                    <option value="3">Status 3</option>
+                                                    <option value="4">Status 4</option>
+                                                    <option value="1">Status 1</option>
+                                                    <option value="2">Status 2</option>
+                                                    <option value="3">Status 3</option>
+                                                    <option value="4">Status 4</option>
+                                                </select>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    <div class="btnsfield">
+                                        <a href="#" class="btnsfield__btn back">
+                                            <img src="img/previc.svg" alt="next">
+                                            Back
+                                        </a>
+                                        <a href="#" class="btnsfield__btn finish">
+                                            Finish
+                                            <img src="img/goal.png" alt="finish">
+                                        </a>
+                                    </div>
+                                    <div class="disclamer">
+                                        <p>
+                                            <b>Disclaimer </b>:if you answer this profiler dishonestly you will likely have
+                                            trouble getting getting surveys to credit.
+                                        </p>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
 
-                  
+                    <div class="loaderbox hide">
+                        <div class="loaderblock">
+                            <div class="loaderblock__fig">
+                                <img src="img/loading.svg" alt="loading">
+                                <div class="persloader"><span id="display"></span>%</div>
+                            </div>
+                            <p>loading surveys</p>
+                        </div>
+                    </div>
+
 
                 </div>
 
