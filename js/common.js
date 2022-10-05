@@ -188,5 +188,38 @@ $(document).ready(function () {
     }
 
 
+    // ===========
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
+$(window).on('load', function () {
+    var img = $('.herosect__img');
+
+
+    var theImage = new Image();
+    theImage.src = img.attr("src");
+
+    // alert("Width: " + theImage.width);
+    // alert("Height: " + theImage.height);
+
+    $('.herosect').css('height', theImage.height);
 });
