@@ -355,8 +355,9 @@
 }
 
 .herosect.noimage {
-    height: 120px !important;
+    height: 100px !important;
     background-color: #0A315F;
+    padding-top: 40px;
 
     .subtitle {
         font-weight: 500;
@@ -611,7 +612,13 @@
         }
     }
 
+    .herosect.noimage .subtitle {
+        font-size: 24px;
+    }
 
+    .herosect.noimage {
+        height: 75px !important;
+    }
 
 
 }
