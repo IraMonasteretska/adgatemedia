@@ -146,18 +146,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     $('.step8 .finish').click(function () {
         let counter = 0;
         const maxCounter = 100;
@@ -176,10 +164,6 @@ $(document).ready(function () {
         }
     });
 
-
-
-
-
     if ($('#phone').length) {
         var input = document.querySelector("#phone");
         window.intlTelInput(input, {
@@ -187,29 +171,10 @@ $(document).ready(function () {
         });
     }
 
-
-    // ===========
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
+
+
+// image height
 
 $(window).on('load', function () {
     var img = $('.herosect__img');
