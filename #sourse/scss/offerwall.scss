@@ -355,15 +355,21 @@
 }
 
 .herosect.noimage {
-    height: 100px !important;
+    height: 53px !important;
     background-color: #0A315F;
-    padding-top: 40px;
+    padding-top: 0;
 
     .subtitle {
         font-weight: 500;
         font-size: 30px;
         line-height: 100%;
         font-family: "Maven Pro", sans-serif;
+    }
+
+    .subtitle {
+        margin-top: 0;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -616,9 +622,7 @@
         font-size: 24px;
     }
 
-    .herosect.noimage {
-        height: 75px !important;
-    }
+  
 
 
 }
