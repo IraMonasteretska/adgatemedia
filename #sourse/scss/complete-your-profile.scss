@@ -140,94 +140,9 @@
         justify-content: space-between;
     }
 
-    .checkbox-field {
-        input {
-            display: none;
+    
 
-            &:checked {
-                &+label {
-                    &::after {
-                        background-image: url('../img/checkic.svg');
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: 13px;
-                    }
-                }
-            }
-        }
-
-        label {
-            padding-left: 31px;
-            display: block;
-            color: #425167;
-            font-size: 18px;
-            line-height: 150%;
-            position: relative;
-            cursor: pointer;
-
-            a {
-                color: #4CABE9;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-
-            &::after {
-                content: '';
-                display: inline-block;
-                width: 17px;
-                height: 17px;
-                background-color: #F9F9F9;
-                border: 1px solid #8B95A4;
-                border-radius: 2px;
-                position: absolute;
-                left: 0;
-                top: 6px;
-            }
-        }
-
-
-
-    }
-
-    .radio-field {
-        input {
-            display: none;
-
-            &:checked {
-                &+label {
-                    &::after {
-                        background-image: url('../img/point.png');
-                        background-repeat: no-repeat;
-                        background-position: center;
-                    }
-                }
-            }
-        }
-
-        label {
-            color: #425167;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 150%;
-            position: relative;
-            padding-left: 28px;
-            cursor: pointer;
-
-            &::after {
-                content: '';
-                display: inline-block;
-                border-radius: 50%;
-                width: 18px;
-                height: 18px;
-                border: 1px solid rgba(47, 128, 237, 0.4);
-                position: absolute;
-                left: 0;
-                top: 3px;
-            }
-        }
-    }
+    
 
     .disclamer {
         padding: 25px 0 0 0;
@@ -246,7 +161,93 @@
         }
     }
 }
+.checkbox-field {
+    input {
+        display: none;
 
+        &:checked {
+            &+label {
+                &::after {
+                    background-image: url('../img/checkic.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 13px;
+                }
+            }
+        }
+    }
+
+    label {
+        padding-left: 31px;
+        display: block;
+        color: #425167;
+        font-size: 18px;
+        line-height: 150%;
+        position: relative;
+        cursor: pointer;
+
+        a {
+            color: #4CABE9;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 17px;
+            height: 17px;
+            background-color: #F9F9F9;
+            border: 1px solid #8B95A4;
+            border-radius: 2px;
+            position: absolute;
+            left: 0;
+            top: 6px;
+        }
+    }
+
+
+
+}
+.radio-field {
+    input {
+        display: none;
+
+        &:checked {
+            &+label {
+                &::after {
+                    background-image: url('../img/point.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+    }
+
+    label {
+        color: #425167;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            border: 1px solid rgba(47, 128, 237, 0.4);
+            position: absolute;
+            left: 0;
+            top: 3px;
+        }
+    }
+}
 
 
 .datebirthrow {

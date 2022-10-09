@@ -1,0 +1,167 @@
+.offerstatussect__boxtext .title {
+    margin-bottom: 8px;
+    color: #134887;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 125%;
+}
+
+.offerstatussect__boxtext p b {
+    color: #134887;
+}
+
+.hide {
+    display: none;
+}
+
+.tabs {}
+
+.tabs__btns {
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.tabbtn {
+    width: 96px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #9CB4C3;
+    border-radius: 25px;
+    color: #9CB4C3;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    margin: 0 5px;
+
+    &.tabbtn__active {
+        color: #4CABE9;
+        border: 1px solid #4CABE9;
+    }
+}
+
+.offerstatussect.prlink .offerstatussect__body {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .offerstatussect__box {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.prlinksect {
+    padding: 35px 0 60px;
+}
+
+.qr {
+    padding: 7px;
+    text-align: center;
+
+    img {
+        max-width: 205px;
+    }
+}
+
+.prlinksecdescr {
+    text-align: center;
+    padding: 30px 0 25px;
+
+    p {
+        margin-bottom: 20px;
+        color: #425167;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    a {
+        color: #134887;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 150%;
+    }
+}
+
+.prlinksectform {
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .fotminput {
+        max-width: 309px;
+        width: 100%;
+        flex: 0 0 309px;
+    }
+
+    .prlinksubm {
+        max-width: calc(100% - 329px);
+        width: 100%;
+        flex: 0 0 calc(100% - 329px);
+        height: 49px;
+        background: #4CABE9;
+        border-radius: 30px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            box-shadow: 0 6px 10px #b7b8b9;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+    .offerstatussect.prlink {
+        .offerstatussect__header {
+            padding: 0 10px;   
+        }
+        
+    }
+
+    .prlinksect {
+        padding: 15px 10px 35px 10px;
+    }
+    .offerstatussect.prlink .offerstatussect__body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .tabbtn {
+        font-size: 16px;
+    }
+
+    .prlinksecdescr p {
+        font-size: 14px;
+    }
+
+    .prlinksecdescr a {
+        font-size: 17px;
+    }
+
+    .prlinksecdescr {
+        padding: 25px 0;
+    }
+
+    .prlinksectform {
+        flex-wrap: wrap;
+    }
+
+    .prlinksectform .fotminput,
+    .prlinksectform .prlinksubm {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .prlinksectform .prlinksubm {
+        height: 40px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
