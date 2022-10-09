@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <main class="main">
+            <div class="contactsect">
+                <div class="container">
+                    <div class="contactcontent">
+                        <div class="contactcontent__header">
+                            <h1>Contact us</h1>
+                            <p>
+                                All the form fields below are required
+                            </p>
+                        </div>
+                        <div class="contactcontent__body">
+                            <div class="row">
+                                <div class="col-md-6 p30">
+                                    <div class="contusinpfield">
+                                        <label for="fname">First Name</label>
+                                        <input class="fotminput" type="text" placeholder="" id="fname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 p30">
+                                    <div class="contusinpfield">
+                                        <label for="lname">Last Name</label>
+                                        <input class="fotminput" type="text" placeholder="" id="lname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 p30">
+                                    <div class="contusinpfield reasforcont">
+                                        <label for="reason">Reason for Contact</label>
+                                        <select id="reason" class="selectstyle singleselect">
+                                            <option value="0">I could not complete the offer</option>
+                                            <option value="1">select 2</option>
+                                            <option value="2">select 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offerrequirements">
+                                <p class="contactcontent__boxtitle">
+                                    Offer Requirements
+                                </p>
+                                <div class="offerrequirements__stepsbox">
+                                    <p class="title">
+                                        Requirements for offer Opera GX:
+                                    </p>
+                                    <p class="subtitle">
+                                        Not following the instructions leads to failure to credit
+                                    </p>
+                                    <div class="offerrequirementssteps">
+                                        <div class="offerrequirementssteps__points">
+                                            <div class="offerrequirementssteps__point">1</div>
+                                            <div class="offerrequirementssteps__point">2</div>
+                                            <div class="offerrequirementssteps__point">3</div>
+                                        </div>
+                                        <div class="offerrequirementssteps__text">
+                                            <div class="offerrequirementsstep">
+                                                <p class="offerrequirementsstep__title">
+                                                    Download
+                                                </p>
+                                                <p class="offerrequirementsstep__descr">
+                                                    (Opera Browser)
+                                                </p>
+                                            </div>
+                                            <div class="offerrequirementsstep">
+                                                <p class="offerrequirementsstep__title">
+                                                    Install
+                                                </p>
+                                                <p class="offerrequirementsstep__descr">
+                                                    (Opera Browser)
+                                                </p>
+                                            </div>
+                                            <div class="offerrequirementsstep">
+                                                <p class="offerrequirementsstep__title">
+                                                    Open
+                                                </p>
+                                                <p class="offerrequirementsstep__descr">
+                                                    (Opera Browser)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contusradiosect">
+                                <div class="contusradiosect__box">
+                                    <div class="row">
+                                        <div class="col-md-6 p30">
+                                            <div class="radio-field">
+                                                <input type="radio" name="radname1" id="rad1">
+                                                <label for="rad1">I did not follow the requirements above.</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 p30">
+                                            <div class="radio-field">
+                                                <input type="radio" name="radname1" id="rad2">
+                                                <label for="rad2">I followed the requirements above.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contusradiosect__box inonerow">
+                                    <p class="contactcontent__boxtitle">
+                                        Real Information
+                                    </p>
+                                    <div class="radio-field">
+                                        <input type="radio" name="radname3" id="rad3">
+                                        <label for="rad3">I did not complete the offer with legitimate/real information
+                                            (email, address, etc).</label>
+                                    </div>
+                                    <div class="radio-field">
+                                        <input type="radio" name="radname3" id="rad4">
+                                        <label for="rad4">I completed the offer with legitimate/real
+                                            information.</label>
+                                    </div>
+                                    <p class="infotext">Providing fake information leads to failure to credit or
+                                        reversals after successful credits.</p>
+                                </div>
+                                <div class="contusradiosect__box inonerow">
+                                    <p class="contactcontent__boxtitle">
+                                        Duplicate Completions
+                                    </p>
+                                    <div class="radio-field">
+                                        <input type="radio" name="radname4" id="rad5">
+                                        <label for="rad5">I completed this offer elsewhere before completing it on
+                                            AdGate Rewards.</label>
+                                    </div>
+                                    <div class="radio-field">
+                                        <input type="radio" name="radname4" id="rad6">
+                                        <label for="rad6">I did not complete the offer elsewhere.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgproof">
+                                <p class="contactcontent__boxtitle">
+                                    Image Proof
+                                </p>
+                                <p class="imgproof__descr">
+                                    Please upload an image providing proof of your completion of the offer. Please make
+                                    sure your proof includes identifiable information (name, account numbers, email
+                                    etc.) and a clearly visible date/time.
+                                    <span>Max file size: 3MB</span>
+                                </p>
+                                <div class="file-upload">
+                                    <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple>
+                                    <button class="file-upload__button" type="button">Browse <img src="img/browse.svg"
+                                            alt="img"></button>
+                                    <span class="file-upload__label"></span>
+                                </div>
+                                <p class="note">
+                                    Note: Keeping all emails, confirmation numbers, and screenshots related to the offer
+                                    is always a good idea.
+                                </p>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 p30">
+                                    <div class="contusinpfield">
+                                        <label for="email">Your Email</label>
+                                        <input class="fotminput" type="email" placeholder="" id="email">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 p30">
+                                    <div class="contusinpfield textarea">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" class="fotminput"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inpfields">
+                                <div class="checkbox-field">
+                                    <input type="checkbox" id="privacy" checked="">
+                                    <label for="privacy">
+                                        I confirm that all of the above information is accurate. I understand that
+                                        submitting false information to AdGate Rewards support may result in a permanent
+                                        ban.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="contusbottsect">
+                                <button type="submit">
+                                    Send
+                                    <img src="img/send.svg" alt="img">
+                                </button>
+                                <p>Please complete all the fields.</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/intlTelInput.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
